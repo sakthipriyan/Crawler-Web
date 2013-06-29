@@ -60,12 +60,12 @@
 	<div id="wrap">
 		<div class="container">
 		<div class="row-fluid">
-				<div class="span6 offset3 well">
+				<div class="span8 offset2 well">
 					<fieldset>
 						<legend>Rate It</legend>
 						<div id="input" @if(rateit.isDefined){style="display:none"}>
 						<Textarea id="input-text"
-							placeholder="Enter your review on the book here." rows="8"
+							placeholder="Enter your book review here." rows="8"
 							class="span12"></Textarea>
 						<span class="help-block">Enter your review and submit to
 							see the rating.</span>
@@ -88,12 +88,17 @@
 				</div>
 			</div>
 			<div class="row-fluid">
-				<div class="span6 offset3 well">
+				<div class="span8 offset2 well">
 					<fieldset>
-						<legend>REST API</legend>
-					
-					GET /?review=your review here
-					
+						<legend>REST API<small> Sample request/response given below.</small></legend>
+						<table class="table table-bordered" style="width:100%">
+						<tr><td><b>Request</b></td><td><span class="text-info">Get </span> /?review=vivid%20cause%20none%20leaving%20previous%20sweet<br/>
+						<span class="text-info">Accept</span> application/json</td></tr>
+						
+						<tr><td><b>Response</b></td><td>{"review":"vivid cause none leaving previous sweet","rating":"Good"}</td></tr>
+						</table>
+						
+
 					</fieldset>
 				</div>
 			</div>
