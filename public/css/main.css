@@ -1,0 +1,38 @@
+html,body {
+	height: 100%;
+}
+
+body {
+	background-color: #fcfcfc;
+}
+
+.inner {
+	font-size: 16px;
+	background-color: #fefefe;
+	padding: 10px;
+	border: 2px solid #eeeeee;
+}
+
+#loading {
+	display:none;
+	height:350px;
+}
+
+#wrap>.container {
+	padding-top: 60px;
+}
+
+@media ( max-width : 767px) {
+	body {
+		padding-top: 0;
+	}
+	#wrap>.container {
+		padding-top: 0px;
+	}
+}
+
+@media ( max-width : 979px) {
+	body {
+		padding-top: 0;
+	}
+}
